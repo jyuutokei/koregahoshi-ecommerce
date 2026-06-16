@@ -11,35 +11,39 @@
 @plugin '@tailwindcss/typography';
 
 @font-face {
-    font-family: 'Beatrice Bold';
-    src: url('../fonts/BeatriceHeadline-Bold.woff2') format('woff2'),
-        url('../fonts/BeatriceHeadline-Bold.woff') format('woff');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Beatrice Extra Bold';
+    font-family: 'Beatrice';
     src: url('../fonts/BeatriceHeadline-Extrabold.woff2') format('woff2'),
         url('../fonts/BeatriceHeadline-Extrabold.woff') format('woff');
     font-weight: 800;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Beatrice Light';
+    font-family: 'Beatrice';
+    src: url('../fonts/BeatriceHeadline-Bold.woff2') format('woff2'),
+        url('../fonts/BeatriceHeadline-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beatrice';
     src: url('../fonts/BeatriceHeadline-Light.woff2') format('woff2'),
         url('../fonts/BeatriceHeadline-Light.woff') format('woff');
     font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Beatrice Regular';
+    font-family: 'Beatrice';
     src: url('../fonts/BeatriceHeadline-Regular.woff2') format('woff2'),
         url('../fonts/BeatriceHeadline-Regular.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
 }
 
 @theme {
-    --font-sans: 'Beatrice Regular', 'Beatrice Light', 'Beatrice Bold', 'Beatrice Extra Bold', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'Beatrice', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -50,6 +54,7 @@
         left: 0;
         width: 100dvw;
         height: 100dvh;
+        z-index: -1;
         background-image: url('../images/noisy-background.png');
         background-repeat: no-repeat;
         background-size: cover;
