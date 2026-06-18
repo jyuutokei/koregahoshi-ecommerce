@@ -50,23 +50,30 @@
 
 @layer components {
     .bg-layer {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100dvw;
-        height: 100dvh;
-        z-index: -1;
+        @apply fixed top-0 left-0 w-dvw h-dvh -z-1 bg-no-repeat bg-cover bg-center;
         background-image: url('../images/noisy-background.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     .logo {
+        @apply bg-contain bg-no-repeat;
         width: 40px;
         height: 40px;
         background-image: url('../images/logo.png');
-        background-size: contain;
-        background-repeat: no-repeat;
+    }
+}
+
+@layer utilities {
+    .tabs .tab.tab-active {
+        @apply bg-neutral text-white;          
+    }
+    .tabs .tab {
+        @apply border border-black w-10 h-10 rounded-none text-neutral;
+
+        &:hover {
+            @apply bg-neutral text-white;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
     }
 }
