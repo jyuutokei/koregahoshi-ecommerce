@@ -1,6 +1,6 @@
-<div class="card w-96 rounded-none mt-7">
+<div class="card rounded-none mt-7 overflow-hidden min-w-0">
     <figure class="border relative">
-        <img {{ $attributes->merge(['class' => "w-full object-center object-cover"]) }}
+        <img {{ $attributes->merge(['class' => "w-full object-cover"]) }}
             src="{{ Vite::asset('resources/images/fashion-models/alameenng.webp') }}"
             alt="Fashion model wearing new summer collection">
         <button class="absolute bottom-0 left-1/2 -translate-x-1/2 p-2 bg-altgray">
