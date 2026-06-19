@@ -6,3 +6,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', fn () => view('welcome'))->name('home');
 Route::get('/products', fn () => view('products'))->name('products');
+Route::get('/product', fn () => view('product'))->name('product');
