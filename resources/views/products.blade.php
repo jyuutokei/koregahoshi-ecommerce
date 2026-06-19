@@ -3,12 +3,9 @@
         Products
     </x-slot:title>
 
-    <div class="drawer lg:drawer-open mt-20">
+    <div class="min-w-0 overflow-x-hidden drawer lg:drawer-open mt-20">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col max-inline-1/6">
-            <label for="my-drawer-3" class="btn drawer-button lg:hidden">
-                Open drawer
-            </label>
+        <div class="drawer-content flex flex-col ml-16">
             <div>
                 <div class="breadcrumbs text-sm">
                     <ul>
@@ -19,18 +16,19 @@
                 <h2 class="font-bold text-3xl mt-2 mb-3">PRODUCTS</h2>
                 <div class="flex justify-between items-center-safe">
                     <x-search-input />
-                    <div>
-                        <x-buttons.carousel-btn />
-                    </div>
                 </div>
+                <label for="my-drawer-3" class="mt-5 btn bg-transparent drawer-button lg:hidden">
+                    Filter
+                    <x-icons.angle-arrow direction="right" />
+                </label>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                <x-card class="max-h-85" />
-                <x-card class="max-h-85" />
-                <x-card class="max-h-85" />
-                <x-card class="max-h-85" />
-                <x-card class="max-h-85" />
-                <x-card class="max-h-85" />
+            <div class="grid grid-cols-[repeat(auto-fill,minmax(max(100%/4,300px),1fr))] gap-5">
+                <x-card class="aspect-square" />
+                <x-card class="aspect-square" />
+                <x-card class="aspect-square" />
+                <x-card class="aspect-square" />
+                <x-card class="aspect-square" />
+                <x-card class="aspect-square" />
             </div>
         </div>
         <div class="drawer-side">
