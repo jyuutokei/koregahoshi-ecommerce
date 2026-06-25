@@ -13,7 +13,7 @@
                         <li><a href="{{ route("products") }}">Products</a></li>
                     </ul>
                 </div>
-                <h2 class="font-bold text-3xl mt-2 mb-3">PRODUCTS</h2>
+                <h2 class="font-extrabold text-3xl mt-2 mb-3">PRODUCTS</h2>
                 <div class="flex justify-between items-center-safe">
                     <x-search-input />
                 </div>
