@@ -15,8 +15,8 @@
                             culpa
                             voluptatem architecto asperiores ducimus, cumque, officia autem dolorum enim ad quidem
                         </p>
-                        <button aria-label="Change delivery address" class="btn border border-black rounded-none
-                                    bg-transparent mt-3">Change</button>
+                        <button aria-label="Change delivery address" class="btn rounded-none
+                                    mt-3 bg-altgray">Change</button>
                     </div>
                 </div>
                 <div class="divider lg:divider-horizontal"></div>
@@ -26,7 +26,7 @@
                     <div class="mt-5">
                         <p>Cash on Delivery</p>
                         <button aria-label="Change payment method"
-                            class="btn border border-black rounded-none bg-transparent mt-8">Change</button>
+                            class="btn rounded-none mt-8 bg-altgray">Change</button>
                     </div>
                 </div>
             </div>
@@ -34,11 +34,11 @@
         <div class="divider"></div>
         <h3 class="font-bold text-2xl">Your Order</h3>
         <div class="flex gap-5 mt-8">
-            <div class="grid grid-cols-[repeat(auto-fill,minmax(max(100%/3,300px),1fr))] gap-5 w-full">
-                <x-order-card />
-                <x-order-card />
-                <x-order-card />
-                <x-order-card />
+            <div class="grid grid-cols-[repeat(auto-fill,minmax(max(100%/3,250px),1fr))] gap-5 w-full">
+                <x-card-order />
+                <x-card-order />
+                <x-card-order />
+                <x-card-order />
             </div>
             <div class="divider lg:divider-horizontal"></div>
             <div>
@@ -57,7 +57,7 @@
                         <p class="font-bold">$127</p>
                     </div>
                     <div>
-                        <button class="mt-7 w-full btn bg-transparent border border-black rounded-none">Place
+                        <button class="mt-7 w-full btn rounded-none bg-altgray">Place
                             Order</button>
                     </div>
                 </div>
