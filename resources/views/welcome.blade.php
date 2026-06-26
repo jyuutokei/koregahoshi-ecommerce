@@ -28,11 +28,13 @@
                 </x-img3dhover>
             </div>
             <div class="flex row-start-2 place-items-end-safe justify-between">
-                <a role="button" href="{{ route("products") }}"
-                    class="btn shrink justify-between px-6 py-2 bg-altgray w-50 md:w-2xs cursor-pointer group">
-                    Go To Shop
-                    <x-icons.arrow />
-                </a>
+                <div class="aura">
+                    <a role="button" href="{{ route("products") }}"
+                        class="btn shrink justify-between px-6 py-2 bg-altgray w-50 md:w-2xs cursor-pointer group">
+                        Go To Shop
+                        <x-icons.arrow />
+                    </a>
+                </div>
                 <x-buttons.pagination-btn class="hidden ml-7" />
             </div>
         </div>
@@ -75,7 +77,7 @@
             </div>
         </div>
         <div class="flex justify-center mt-5">
-            <button class="btn bg-transparent flex-col cursor-pointer group hover:bg-neutral">
+            <button class="btn flex-col cursor-pointer group hover:bg-neutral">
                 <p class="text-gray-500 -mb-2 group-hover:text-white">More</p>
                 <x-icons.angle-arrow direction="down" />
             </button>
