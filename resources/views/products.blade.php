@@ -17,7 +17,7 @@
                 <div class="flex justify-between items-center-safe">
                     <x-search-input />
                 </div>
-                <label for="my-drawer-3" class="mt-5 btn bg-transparent drawer-button lg:hidden">
+                <label for="my-drawer-3" class="mt-5 btn drawer-button lg:hidden">
                     Filter
                     <x-icons.angle-arrow direction="right" />
                 </label>
