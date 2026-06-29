@@ -22,7 +22,7 @@
                     <x-icons.angle-arrow direction="right" />
                 </label>
             </div>
-            <div class="grid grid-cols-[repeat(auto-fill,minmax(max(100%/4,300px),1fr))] gap-5">
+            <div class="mt-10 grid grid-cols-[repeat(auto-fill,minmax(max(100%/4,300px),1fr))] gap-5">
                 <x-card class="aspect-square" />
                 <x-card class="aspect-square" />
                 <x-card class="aspect-square" />
