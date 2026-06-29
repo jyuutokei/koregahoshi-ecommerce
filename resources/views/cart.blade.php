@@ -7,7 +7,7 @@
         <h1 class="font-extrabold text-3xl">Shopping Cart</h1>
         <div class="divider"></div>
         <div class="flex gap-5">
-            <div class="flex-1 grid grid-cols-[repeat(auto-fill,minmax(max(100%/4,300px),1fr))] gap-10">
+            <div class="flex-1 grid grid-cols-[repeat(auto-fill,minmax(max(100%/4,200px),1fr))] gap-10">
                 <x-card-cart />
                 <x-card-cart />
                 <x-card-cart />
