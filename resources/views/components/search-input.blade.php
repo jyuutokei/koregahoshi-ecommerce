@@ -1,4 +1,5 @@
-<label {{ $attributes->merge(['class' => 'input bg-altgray rounded-none w-full md:max-w-sm']) }}>
+<label
+    {{ $attributes->merge(['class' => 'input bg-altgray rounded-none w-full sm:max-w-lg md:max-w-xl lg:max-w-sm']) }}>
     <svg class="h-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
             <circle cx="11" cy="11" r="8"></circle>
