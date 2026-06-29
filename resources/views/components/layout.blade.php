@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="overflow-x-hidden">
+<body>
     <div class="bg-layer"></div>
     <x-nav />
     <main class="min-w-0 mx-auto max-w-400 w-[90%] mt-10">
