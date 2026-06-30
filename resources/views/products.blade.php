@@ -5,7 +5,7 @@
 
     <div class="min-w-0 overflow-x-hidden drawer lg:drawer-open mt-20">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col ml-16">
+        <div class="drawer-content flex flex-col lg:ml-16">
             <div>
                 <div class="breadcrumbs text-sm">
                     <ul>
@@ -31,7 +31,7 @@
                 <x-card class="aspect-square" />
             </div>
         </div>
-        <div class="drawer-side">
+        <div class="drawer-side flex flex-col lg:block">
             <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
             <h3 class="font-bold text-2xl mt-25">Filters</h3>
             <div>
@@ -39,7 +39,7 @@
                 <x-buttons.size-tabs />
             </div>
             <div class="divider w-full"></div>
-            <div class="w-full">
+            <div>
                 <x-accordion>Availability</x-accordion>
                 <x-accordion>Category</x-accordion>
                 <x-accordion>Price Range</x-accordion>
