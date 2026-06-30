@@ -9,7 +9,7 @@
         </div>
         <div class="min-w-0 flex flex-col lg:grid grid-rows-[minmax(0,200px)_minmax(0,200px)] grid-cols-3 gap-4 mt-20">
             <div class="row-start-1 col-start-1">
-                <h1 class="font-extrabold text-6xl md:text-5xl lg:text-5xl xl:text-6xl text-center lg:text-start">
+                <h1 class="font-extrabold text-6xl lg:text-5xl xl:text-6xl text-center lg:text-start">
                     NEW
                     <br>
                     COLLECTION
