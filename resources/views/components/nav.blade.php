@@ -1,4 +1,5 @@
-<div class="navbar mt-10 max-w-400 w-[90%] mx-auto shadow-md px-5">
+<div
+    class="{{ str_contains(url()->current(), "product") ? "hidden lg:flex navbar" : "navbar" }} mt-10 max-w-400 w-[90%] mx-auto shadow-md px-5">
     <div class="md:hidden flex-1 dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-15 w-15" fill="none" viewBox="0 0 24 24"
