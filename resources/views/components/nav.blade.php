@@ -15,7 +15,7 @@
     </div>
     <div class="hidden md:flex flex-1">
         <a href="{{ route("home") }}" class="btn btn-ghost text-xl">Home</a>
-        <a href="#" class="btn btn-ghost text-xl">Collections</a>
+        <a href="{{ route("shop") }}" class="btn btn-ghost text-xl">Shop</a>
         <a href="#" class="btn btn-ghost text-xl">New</a>
     </div>
     <div class="logo flex-1"></div>
