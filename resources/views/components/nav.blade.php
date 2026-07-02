@@ -28,6 +28,13 @@
         <button type="button" class="md:hidden w-10 rounded-full p-1 bg-white border-3 border-black cursor-pointer">
             <x-icons.cart />
         </button>
+        @guest
+        <div class="navbar-end justify-start">
+            <a href="{{ route("login") }}" class="btn bg-transparent text-xl">Login</a>
+            <a href="{{ route("register") }}" class="btn bg-transparent text-xl">Register</a>
+        </div>
+        @endguest
+        @auth
         <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                 <div class="w-10 rounded-full p-1 bg-black">
@@ -45,5 +52,6 @@
                 <li><a>Logout</a></li>
             </ul>
         </div>
+        @endauth
     </div>
 </div>
